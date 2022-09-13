@@ -65,3 +65,25 @@ footer{
 .baguetteBox-button {
     background-color: transparent !important;
 }
+
+/*MOVIE*/
+.container-movie-youtube {
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    top: 100px
+}
+.container-spotify {
+    padding: 40px;
+    text-align: center;
+}
+.container-poster {
+    padding: 0px;
+    margin: 0px;
+}
+.container-poster h1{
+    margin: 0px;
+    padding: 0px;
+    transition: (0, 100px);
+    text-decoration: lawngreen;
+}
