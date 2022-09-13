@@ -1,5 +1,6 @@
 body{
-    background: linear-gradient(to right, #a640b8, #703db2, #292b8f, #33c7cd);
+    /*https://uigradients.com/#Wiretap*/
+    background: linear-gradient(to right, #8A2387, #E94057, #F27121);
 }
 
 html {
