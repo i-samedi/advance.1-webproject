@@ -1,63 +1,44 @@
-.container-2{
-    text-align: center;
-    width: 300px;
-    vertical-align: middle;
-    white-space: nowrap;
-    position: relative;
-  }
-  .container-2 input#search{
-    width: 50px;
-    height: 50px;
-    background: #2b303b;
-    border: none;
-    font-size: 10pt;
-    float: left;
-    color: #262626;
-    padding-left: 35px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-    color: #fff;
-   
-    -webkit-transition: width .55s ease;
-    -moz-transition: width .55s ease;
-    -ms-transition: width .55s ease;
-    -o-transition: width .55s ease;
-    transition: width .55s ease;
-  }
-  .container-2 input#search::-webkit-input-placeholder {
-    color: #65737e;
- }
-  
- .container-2 input#search:-moz-placeholder { /* Firefox 18- */
-    color: #65737e;  
- }
-  
- .container-2 input#search::-moz-placeholder {  /* Firefox 19+ */
-    color: #65737e;  
- }
-  
- .container-2 input#search:-ms-input-placeholder {  
-    color: #65737e;  
- }
- .container-2 .icon{
-    position: absolute;
-    top: 50%;
-    margin-left: 17px;
-    margin-top: 17px;
-    z-index: 1;
-    color: #ffffff;
-  }
-  .container-2 input#search:focus, .container-2 input#search:active{
-    outline:none;
-    width: 300px;
-  }
-   
-  .container-2:hover input#search{
-  width: 300px;
-  }
-   
-  .container-2:hover .icon{
-    color: #93a2ad;
-  }
+.search-box{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background: #ee0467;
+  height: 40px;
+  border-radius: 40px;
+  padding: 10px;
 
+}
+.search-box:hover > .search-txt{
+  width: 240px;
+  padding: 0 6px;
+  top: 40px;
+}
+.search-box:hover > .search-btn{
+ background: #ee0467;
+   }
+.search-btn{
+  color: #ffffff;
+  float: right;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #ee0467;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+  text-decoration: none;
+}
+.search-txt{
+border: none;
+background: none;
+outline: none;
+float: left;
+padding: 0;
+color: rgb(255, 255, 255);
+font-size: 21px;
+transition: 0.4s;   
+line-height: 40px;
+width: 0px;
+}
