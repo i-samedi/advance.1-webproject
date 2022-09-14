@@ -3,7 +3,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
-  background: #ee0467;
+  background:linear-gradient(to right, #E94057, #F27121);
   height: 40px;
   border-radius: 40px;
   padding: 10px;
@@ -15,15 +15,15 @@
   top: 40px;
 }
 .search-box:hover > .search-btn{
- background: #ee0467;
-   }
+  background:linear-gradient(to right, #E94057, #F27121);
+}
 .search-btn{
   color: #ffffff;
   float: right;
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background: #ee0467;
+  background:linear-gradient(to right, #E94057, #F27121);
   display: flex;
   justify-content: center;
   align-items: center;

@@ -29,6 +29,10 @@ body {
     top: -50px;
     left: calc(50% - 50px);
   }
+  .login-box .icon:hover {
+    transform: scale(1.1);
+    transition: 0.2s ease-in-out;
+}
   
   .login-box h1 {
     margin: 0;
