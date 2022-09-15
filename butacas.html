@@ -1,225 +1,106 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8" />
-        <title>MarkHoyts: La capital del cine</title>
-        <link href="css/style-index.css" rel="stylesheet">
-        <link href="css/style-search.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
-        <link rel="shortcut icon" href="img/head1.1.png">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/style-butaca.css" rel="stylesheet"/>
+    <title>MarkHoyts: La capital del cine</title>
+    <link href="css/style-index.css" rel="stylesheet">
+    <link href="css/style-search.css" rel="stylesheet">
+    <link rel="shortcut icon" href="img/head1.1.png">
+  </head>
+  <body>
+    <ul class="showcase">
+      <li>
+        <div class="seat"></div>
+        <small>N/A</small>
+      </li>
+      <li>
+        <div class="seat selected"></div>
+        <small>Seleccionado</small>
+      </li>
+      <li>
+        <div class="seat occupied"></div>
+        <small>Ocupados</small>
+      </li>
+    </ul>
 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    </head>
-    <body>
-        <!--Encabezado-->
-        <nav class="navbar sticky-top navbar-expand-sm navbar-light bg-light baralign">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#opciones">
-                <span class="navbar-toggler-icon"></span>
-                </button>
-            
-                <a class="navbar-brand" href="index.html">
-                <img src="img/head.png" width="60" height="60">
-                </a>
-                
-                <!-- &nbsp es un espacio-->
+    <div class="container">
+      <div class="screen"></div>
 
-                <div class="collapse navbar-collapse" id="opciones">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                    <a class="nav-link" href="index.html"><img src="img/hogar.png" width="27" height="27" alt=""></a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="about-us.html"><img src="img/ayuda.png" width="27" height="27" alt=""></a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="my-user.html"><img src="img/usuario.png" width="27" height="27"
-                        alt=""></a>
-                    </li>
-                    <!--Barra de Busqueda-->
-                    <div class="search-box">
-                    <input style="color: rgb(255, 255, 255);" class="search-txt" type="search" placeholder="Search...">
-                    <a class="search-btn" href="#">
-                        <i class="fas fa-search"></i>
-                    </a>
-                </div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat occupied"></div>
+        <div class="seat occupied"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat occupied"></div>
+        <div class="seat occupied"></div>
+      </div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat occupied"></div>
+        <div class="seat occupied"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat occupied"></div>
+        <div class="seat occupied"></div>
+        <div class="seat occupied"></div>
+        <div class="seat"></div>
+      </div>
+    </div>
 
-                </ul>
-                
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                    <a class="nav-link" href="login.html"><img src="img/login.png" width="27" height="27"></a>
-                    </li>
-                    <!-- <li class="nav-item">
-                    <a class="nav-link" href="register.html"><img src="img/register.png" width="27" height="27"></a>
-                    </li> -->
-                    <li class="nav-item">
-                    <a class="nav-link" href="shopping.html"><img src="img/carro-de-la-carretilla.png" width="27" height="27"
-                        alt=""></a>
-                    </li>
-                </ul>
-                </div>
-        </nav>
+    <p class="text">
+      Has seleccionado <span id="count">0</span> de butacas, precio total $ <span
+        id="total"
+        >0</span
+      >
+    </p>
+    <br>
+    <a class="pagare"
+    href="index.html">
+      <input type="submit" value="Comprar">
+    </a>
 
-        <!--Butacas-->
-        </br>
-        <div class="container gallery-container">
-            <br>
-            <div class="asientos">
-                <h3>Escoga sus asientos</h3>
-                <br><br><br>
-                <img src="img/screen.png">
-
-                <div class="choose-asiento">
-                    <!--Primera Fila-->
-                    <p>
-                        <label for="seat1">
-                            <input type="checkbox" name="option1" id="opt1">
-                            <span class="choose-seat1"></span>
-                        </label>
-                        <label for="seat2">
-                            <input type="checkbox" name="option2" id="opt2">
-                            <span class="choose-seat2"></span>
-                        </label>
-                        <label for="seat3">
-                            <input type="checkbox" name="option3" id="opt3">
-                            <span class="choose-seat3"></span>
-                        </label>
-                        <label for="seat4">
-                            <input type="checkbox" name="option3" id="opt3">
-                            <span class="choose-seat3"></span>
-                        </label>
-                        <label for="seat5">
-                            <input type="checkbox" name="option3" id="opt3">
-                            <span class="choose-seat3"></span>
-                        </label>
-                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                        <label for="seat6">
-                            <input disabled="" type="checkbox" name="option3" id="opt3">
-                            <span class="choose-seat3"></span>
-                        </label>
-                        <label for="seat7">
-                            <input disabled="" type="checkbox" name="option3" id="opt3">
-                            <span class="choose-seat3"></span>
-                        </label>
-                        <label for="seat8">
-                            <input type="checkbox" name="option3" id="opt3">
-                            <span class="choose-seat3"></span>
-                        </label>
-                        <label for="seat9">
-                            <input type="checkbox" name="option3" id="opt3">
-                            <span class="choose-seat3"></span>
-                        </label>
-                        <label for="seat10">
-                            <input type="checkbox" name="option3" id="opt3">
-                            <span class="choose-seat3"></span>
-                        </label>
-                    </p>
-                    <!--Segunda Fila-->
-                    <p>
-                        <label for="seat11">
-                            <input type="checkbox" name="option1" id="opt1">
-                            <span class="choose-seat1"></span>
-                        </label>
-                        <label for="seat12">
-                            <input type="checkbox" name="option2" id="opt2">
-                            <span class="choose-seat2"></span>
-                        </label>
-                        <label for="seat13">
-                            <input type="checkbox" name="option3" id="opt3">
-                            <span class="choose-seat3"></span>
-                        </label>
-                        <label for="seat14">
-                            <input type="checkbox" name="option3" id="opt3">
-                            <span class="choose-seat3"></span>
-                        </label>
-                        <label for="seat15">
-                            <input type="checkbox" name="option3" id="opt3">
-                            <span class="choose-seat3"></span>
-                        </label>
-                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                        <label for="seat16">
-                            <input type="checkbox" name="option3" id="opt3">
-                            <span class="choose-seat3"></span>
-                        </label>
-                        <label for="seat17">
-                            <input type="checkbox" name="option3" id="opt3">
-                            <span class="choose-seat3"></span>
-                        </label>
-                        <label for="seat18">
-                            <input type="checkbox" name="option3" id="opt3">
-                            <span class="choose-seat3"></span>
-                        </label>
-                        <label for="seat19">
-                            <input type="checkbox" name="option3" id="opt3">
-                            <span class="choose-seat3"></span>
-                        </label>
-                        <label for="seat20">
-                            <input tdisabled="" type="checkbox" name="option3" id="opt3">
-                            <span class="choose-seat3"></span>
-                        </label>
-                    </p>
-                    <!--Tercera Fila-->
-                    <p>
-                        <label for="seat21">
-                            <input type="checkbox" name="option1" id="opt1">
-                            <span class="choose-seat1"></span>
-                        </label>
-                        <label for="seat22">
-                            <input type="checkbox" name="option2" id="opt2">
-                            <span class="choose-seat2"></span>
-                        </label>
-                        <label for="seat23">
-                            <input disabled="" type="checkbox" name="option3" id="opt3">
-                            <span class="choose-seat3"></span>
-                        </label>
-                        <label for="seat24">
-                            <input disabled="" type="checkbox" name="option3" id="opt3">
-                            <span class="choose-seat3"></span>
-                        </label>
-                        <label for="seat25">
-                            <input type="checkbox" name="option3" id="opt3">
-                            <span class="choose-seat3"></span>
-                        </label>
-                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                        <label for="seat26">
-                            <input type="checkbox" name="option3" id="opt3">
-                            <span class="choose-seat3"></span>
-                        </label>
-                        <label for="seat27">
-                            <input disabled="" type="checkbox" name="option3" id="opt3">
-                            <span class="choose-seat3"></span>
-                        </label>
-                        <label for="seat28">
-                            <input type="checkbox" name="option3" id="opt3">
-                            <span class="choose-seat3"></span>
-                        </label>
-                        <label for="seat29">
-                            <input type="checkbox" name="option3" id="opt3">
-                            <span class="choose-seat3"></span>
-                        </label>
-                        <label for="seat30">
-                            <input type="checkbox" name="option3" id="opt3">
-                            <span class="choose-seat3"></span>
-                        </label>
-                    </p>
-                    <br><br>
-                    <a href="shopping.html"><input type="submit" value="Add to cart!"></a>
-                </div>
-            </div>
-        </div>
-
-
-        <!--Derechos-->
-        <div class="fooster-act">
-            <footer><hr><p>Web page created by: Ignacio Medina, Ignacio Cabrera. ©2022-2042 MarkHoyts. All rights reserved.</p>
-              <div class="copyright">
-                <a href="https://www.instagram.com/sa.medi_/"><img src="img/instagram.png" width="70px" alt="Instagram"></a>
-                <a href="https://www.instagram.com/ignaciio.tf/"><img src="img/instagram.png" width="70px" alt="Instagram"></a>
-                <a href="https://github.com/i-samedi/advance.1-webproject" target="_blank"><img src="img/github.png" width="70px" alt="GitHub"></a>
-              </div>
-            </footer> 
-          </div>
-    </body>
+  </body>
 </html>
